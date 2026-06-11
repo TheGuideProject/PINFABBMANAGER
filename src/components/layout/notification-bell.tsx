@@ -47,9 +47,13 @@ export function NotificationBell() {
   }, []);
 
   useEffect(() => {
-    load();
-    const interval = setInterval(load, POLL_MS);
-    return () => clearInterval(interval);
+    // setState only happens inside fetch callbacks (async), never sync in the effect.
+    const initial = setTimeout(() => void load(), 0);
+    const interval = setInterval(() => void load(), POLL_MS);
+    return () => {
+      clearTimeout(initial);
+      clearInterval(interval);
+    };
   }, [load]);
 
   const onOpenChange = (open: boolean) => {

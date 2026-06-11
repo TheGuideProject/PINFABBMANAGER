@@ -1,4 +1,4 @@
-import { NextResponse, type NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 import { auth } from "@/server/auth";
 import { prisma } from "@/server/db";
 
@@ -21,7 +21,7 @@ export async function GET() {
 }
 
 /** Mark all as read. */
-export async function POST(_request: NextRequest) {
+export async function POST() {
   const session = await auth();
   if (!session?.user) return new NextResponse(null, { status: 401 });
 
