@@ -13,6 +13,7 @@ import {
 } from "../project-form";
 import { Milestones } from "./milestones";
 import { ProjectTeam } from "./assignments";
+import { ProjectActivity } from "./activity";
 
 export default async function ProjectDetailPage({
   params,
@@ -215,11 +216,7 @@ export default async function ProjectDetailPage({
         </TabsContent>
 
         <TabsContent value="activity" className="pt-2">
-          <Card>
-            <CardContent className="py-10 text-center text-sm text-muted-foreground">
-              {t("activityPlaceholder")}
-            </CardContent>
-          </Card>
+          <ProjectActivity projectId={project.id} />
         </TabsContent>
 
         <TabsContent value="criticalities" className="pt-2">

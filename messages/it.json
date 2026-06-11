@@ -121,6 +121,35 @@
       "DRYDOCK": "Bacino",
       "PORT": "Porto",
       "ANCHORAGE": "Rada"
+    },
+    "MeasurementType": {
+      "TOLERANCE": "Tolleranza",
+      "CLEARANCE": "Gioco",
+      "OIL_LEVEL": "Livello olio",
+      "OIL_CHANGE": "Cambio olio",
+      "PRESSURE": "Pressione",
+      "TEMPERATURE": "Temperatura",
+      "TORQUE": "Coppia",
+      "OTHER": "Altro"
+    },
+    "PhotoCategory": {
+      "FIN_CONDITION": "Condizione pinna",
+      "HULL_OPENING": "Apertura scafo",
+      "SEAL": "Tenuta",
+      "ACTUATOR": "Attuatore",
+      "HYDRAULICS": "Idraulica",
+      "DAMAGE": "Danno",
+      "GENERAL": "Generale",
+      "DOCUMENT": "Documento"
+    },
+    "FinPosition": {
+      "PORT": "Sinistra",
+      "STARBOARD": "Dritta"
+    },
+    "DailyLogStatus": {
+      "DRAFT": "Bozza",
+      "SUBMITTED": "Inviato",
+      "ANALYZED": "Analizzato"
     }
   },
   "forms": {
@@ -144,7 +173,8 @@
       "alreadyAssigned": "Tecnico già assegnato a questo progetto",
       "passwordRequired": "La password è obbligatoria per i nuovi account",
       "notFound": "Non trovato",
-      "genericError": "Qualcosa è andato storto"
+      "genericError": "Qualcosa è andato storto",
+      "alreadySubmitted": "Il log è già stato inviato"
     }
   },
   "entities": {
@@ -238,7 +268,9 @@
       "dates": "Date",
       "planned": "Pianificate",
       "actual": "Effettive",
-      "details": "Dettagli"
+      "details": "Dettagli",
+      "activityEmpty": "Nessun daily log inviato.",
+      "byTechnician": "di {name}"
     },
     "map": {
       "title": "Mappa",
@@ -250,5 +282,42 @@
       "projectsLayer": "Progetti",
       "assignmentsLayer": "Assegnazioni"
     }
+  },
+  "techJobs": {
+    "todayLog": "Log di oggi",
+    "openLog": "Apri il log di oggi",
+    "history": "Storico log",
+    "milestones": "Milestone",
+    "logFor": "Log — {date}",
+    "noLogs": "Ancora nessun log.",
+    "notes": "Note",
+    "workHours": "Ore lavorate",
+    "saveDetails": "Salva dettagli",
+    "measurements": "Misurazioni",
+    "addMeasurement": "Aggiungi misurazione",
+    "fromStandard": "Standard",
+    "freeEntry": "Inserimento libero",
+    "selectStandard": "Seleziona uno standard…",
+    "value": "Valore",
+    "unit": "Unità",
+    "finPosition": "Pinna",
+    "measurementName": "Nome misurazione",
+    "withinSpec": "In tolleranza",
+    "outOfSpec": "FUORI TOLLERANZA",
+    "noMeasurements": "Nessuna misurazione.",
+    "photos": "Foto",
+    "addPhoto": "Aggiungi foto",
+    "category": "Categoria",
+    "caption": "Didascalia",
+    "noPhotos": "Nessuna foto.",
+    "uploading": "Caricamento…",
+    "uploadFailed": "Caricamento fallito",
+    "submitLog": "Invia log",
+    "submitConfirmTitle": "Inviare il log di oggi?",
+    "submitConfirmBody": "Dopo l'invio non potrai più modificarlo. L'ufficio riceve la notifica.",
+    "submittedBadge": "Inviato",
+    "draftBadge": "Bozza",
+    "analyzedBadge": "Analizzato",
+    "type": "Tipo"
   }
 }

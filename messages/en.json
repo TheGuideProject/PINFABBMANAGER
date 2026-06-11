@@ -121,6 +121,35 @@
       "DRYDOCK": "Dry dock",
       "PORT": "Port",
       "ANCHORAGE": "Anchorage"
+    },
+    "MeasurementType": {
+      "TOLERANCE": "Tolerance",
+      "CLEARANCE": "Clearance",
+      "OIL_LEVEL": "Oil level",
+      "OIL_CHANGE": "Oil change",
+      "PRESSURE": "Pressure",
+      "TEMPERATURE": "Temperature",
+      "TORQUE": "Torque",
+      "OTHER": "Other"
+    },
+    "PhotoCategory": {
+      "FIN_CONDITION": "Fin condition",
+      "HULL_OPENING": "Hull opening",
+      "SEAL": "Seal",
+      "ACTUATOR": "Actuator",
+      "HYDRAULICS": "Hydraulics",
+      "DAMAGE": "Damage",
+      "GENERAL": "General",
+      "DOCUMENT": "Document"
+    },
+    "FinPosition": {
+      "PORT": "Port",
+      "STARBOARD": "Starboard"
+    },
+    "DailyLogStatus": {
+      "DRAFT": "Draft",
+      "SUBMITTED": "Submitted",
+      "ANALYZED": "Analyzed"
     }
   },
   "forms": {
@@ -144,7 +173,8 @@
       "alreadyAssigned": "Technician already assigned to this project",
       "passwordRequired": "Password is required for new accounts",
       "notFound": "Not found",
-      "genericError": "Something went wrong"
+      "genericError": "Something went wrong",
+      "alreadySubmitted": "The log was already submitted"
     }
   },
   "entities": {
@@ -238,7 +268,9 @@
       "dates": "Dates",
       "planned": "Planned",
       "actual": "Actual",
-      "details": "Details"
+      "details": "Details",
+      "activityEmpty": "No submitted daily logs yet.",
+      "byTechnician": "by {name}"
     },
     "map": {
       "title": "Map",
@@ -250,5 +282,42 @@
       "projectsLayer": "Projects",
       "assignmentsLayer": "Assignments"
     }
+  },
+  "techJobs": {
+    "todayLog": "Today's log",
+    "openLog": "Open today's log",
+    "history": "Log history",
+    "milestones": "Milestones",
+    "logFor": "Log — {date}",
+    "noLogs": "No logs yet.",
+    "notes": "Notes",
+    "workHours": "Work hours",
+    "saveDetails": "Save details",
+    "measurements": "Measurements",
+    "addMeasurement": "Add measurement",
+    "fromStandard": "Standard",
+    "freeEntry": "Free entry",
+    "selectStandard": "Select a standard…",
+    "value": "Value",
+    "unit": "Unit",
+    "finPosition": "Fin",
+    "measurementName": "Measurement name",
+    "withinSpec": "In spec",
+    "outOfSpec": "OUT OF SPEC",
+    "noMeasurements": "No measurements yet.",
+    "photos": "Photos",
+    "addPhoto": "Add photo",
+    "category": "Category",
+    "caption": "Caption",
+    "noPhotos": "No photos yet.",
+    "uploading": "Uploading…",
+    "uploadFailed": "Upload failed",
+    "submitLog": "Submit log",
+    "submitConfirmTitle": "Submit today's log?",
+    "submitConfirmBody": "After submitting you can no longer edit it. The office gets notified.",
+    "submittedBadge": "Submitted",
+    "draftBadge": "Draft",
+    "analyzedBadge": "Analyzed",
+    "type": "Type"
   }
 }

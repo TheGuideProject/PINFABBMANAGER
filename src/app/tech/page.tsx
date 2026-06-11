@@ -1,9 +1,11 @@
+import Link from "next/link";
 import { getFormatter, getTranslations } from "next-intl/server";
 import { Ship, MapPin, CalendarRange } from "lucide-react";
 import { auth } from "@/server/auth";
 import { prisma } from "@/server/db";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { PROJECT_STATUS_BADGE } from "@/lib/status";
 
 export default async function TechHome() {
@@ -88,6 +90,9 @@ export default async function TechHome() {
                   <span className="text-xs text-muted-foreground">
                     {t("role")}: {tEnums(`AssignmentRole.${assignment.role}`)}
                   </span>
+                  <Button asChild size="sm">
+                    <Link href={`/tech/jobs/${project.id}`}>{t("viewJob")}</Link>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
