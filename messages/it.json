@@ -1,0 +1,114 @@
+{
+  "common": {
+    "appName": "PINFAB Manager",
+    "tagline": "Operazioni pinne stabilizzatrici, nel mondo",
+    "language": "Lingua",
+    "italian": "Italiano",
+    "english": "English",
+    "signOut": "Esci",
+    "comingSoon": "Presto",
+    "loading": "Caricamento…",
+    "viewAll": "Vedi tutto",
+    "today": "Oggi",
+    "days": "{count, plural, one {# giorno} other {# giorni}}",
+    "notifications": "Notifiche"
+  },
+  "login": {
+    "title": "Accedi",
+    "subtitle": "Entra nella piattaforma operativa PINFAB",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Accedi",
+    "submitting": "Accesso in corso…",
+    "invalidCredentials": "Email o password non validi",
+    "genericError": "Qualcosa è andato storto. Riprova."
+  },
+  "nav": {
+    "manager": {
+      "dashboard": "Dashboard",
+      "map": "Mappa",
+      "projects": "Progetti",
+      "vessels": "Navi",
+      "clients": "Clienti",
+      "technicians": "Tecnici",
+      "planning": "Pianificazione",
+      "criticalities": "Criticità",
+      "reports": "Report",
+      "analytics": "Analytics",
+      "settings": "Impostazioni"
+    },
+    "tech": {
+      "jobs": "Lavori",
+      "directives": "Disposizioni",
+      "profile": "Profilo"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Bentornato, {name}",
+    "activeProjects": "Progetti attivi",
+    "techniciansDeployed": "Tecnici in trasferta",
+    "openCriticalities": "Criticità aperte",
+    "endingSoon": "In chiusura entro 14 giorni",
+    "upcomingDeadlines": "Prossime scadenze",
+    "noDeadlines": "Nessun progetto in chiusura nei prossimi 14 giorni.",
+    "recentCriticalities": "Criticità recenti",
+    "noCriticalities": "Nessuna criticità aperta. Tutto regolare.",
+    "fleetOverview": "Progetti per stato",
+    "ends": "Chiude {date}"
+  },
+  "techHome": {
+    "title": "I miei lavori",
+    "noJobs": "Nessun lavoro assegnato.",
+    "vessel": "Nave",
+    "location": "Località",
+    "dates": "Date",
+    "role": "Ruolo",
+    "viewJob": "Apri",
+    "directivesTitle": "Disposizioni",
+    "directivesEmpty": "Nessuna disposizione dall'ufficio.",
+    "profileTitle": "Profilo"
+  },
+  "enums": {
+    "ProjectStatus": {
+      "PLANNED": "Pianificato",
+      "MOBILIZING": "Mobilitazione",
+      "IN_PROGRESS": "In corso",
+      "ON_HOLD": "In pausa",
+      "COMPLETED": "Completato",
+      "CANCELLED": "Annullato"
+    },
+    "ProjectType": {
+      "INSTALLATION": "Installazione",
+      "SERVICE": "Service",
+      "DRYDOCK_WORKS": "Lavori in bacino",
+      "INSPECTION": "Ispezione",
+      "WARRANTY": "Garanzia"
+    },
+    "Severity": {
+      "LOW": "Bassa",
+      "MEDIUM": "Media",
+      "HIGH": "Alta",
+      "CRITICAL": "Critica"
+    },
+    "CriticalityStatus": {
+      "OPEN": "Aperta",
+      "ACKNOWLEDGED": "Presa in carico",
+      "IN_PROGRESS": "In lavorazione",
+      "RESOLVED": "Risolta",
+      "DISMISSED": "Scartata"
+    },
+    "AssignmentRole": {
+      "LEAD": "Capo squadra",
+      "TECHNICIAN": "Tecnico",
+      "SUPPORT": "Supporto"
+    },
+    "AssignmentStatus": {
+      "PLANNED": "Pianificata",
+      "CONFIRMED": "Confermata",
+      "ACTIVE": "Attiva",
+      "COMPLETED": "Completata",
+      "CANCELLED": "Annullata"
+    }
+  }
+}

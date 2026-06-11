@@ -1,0 +1,114 @@
+{
+  "common": {
+    "appName": "PINFAB Manager",
+    "tagline": "Fin stabilizer operations, worldwide",
+    "language": "Language",
+    "italian": "Italiano",
+    "english": "English",
+    "signOut": "Sign out",
+    "comingSoon": "Soon",
+    "loading": "Loading…",
+    "viewAll": "View all",
+    "today": "Today",
+    "days": "{count, plural, one {# day} other {# days}}",
+    "notifications": "Notifications"
+  },
+  "login": {
+    "title": "Sign in",
+    "subtitle": "Access the PINFAB operations platform",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in…",
+    "invalidCredentials": "Invalid email or password",
+    "genericError": "Something went wrong. Please try again."
+  },
+  "nav": {
+    "manager": {
+      "dashboard": "Dashboard",
+      "map": "Map",
+      "projects": "Projects",
+      "vessels": "Vessels",
+      "clients": "Clients",
+      "technicians": "Technicians",
+      "planning": "Planning",
+      "criticalities": "Criticalities",
+      "reports": "Reports",
+      "analytics": "Analytics",
+      "settings": "Settings"
+    },
+    "tech": {
+      "jobs": "Jobs",
+      "directives": "Directives",
+      "profile": "Profile"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {name}",
+    "activeProjects": "Active projects",
+    "techniciansDeployed": "Technicians deployed",
+    "openCriticalities": "Open criticalities",
+    "endingSoon": "Ending within 14 days",
+    "upcomingDeadlines": "Upcoming deadlines",
+    "noDeadlines": "No projects ending in the next 14 days.",
+    "recentCriticalities": "Recent criticalities",
+    "noCriticalities": "No open criticalities. All clear.",
+    "fleetOverview": "Projects by status",
+    "ends": "Ends {date}"
+  },
+  "techHome": {
+    "title": "My jobs",
+    "noJobs": "No jobs assigned yet.",
+    "vessel": "Vessel",
+    "location": "Location",
+    "dates": "Dates",
+    "role": "Role",
+    "viewJob": "Open",
+    "directivesTitle": "Directives",
+    "directivesEmpty": "No directives from the office.",
+    "profileTitle": "Profile"
+  },
+  "enums": {
+    "ProjectStatus": {
+      "PLANNED": "Planned",
+      "MOBILIZING": "Mobilizing",
+      "IN_PROGRESS": "In progress",
+      "ON_HOLD": "On hold",
+      "COMPLETED": "Completed",
+      "CANCELLED": "Cancelled"
+    },
+    "ProjectType": {
+      "INSTALLATION": "Installation",
+      "SERVICE": "Service",
+      "DRYDOCK_WORKS": "Dry-dock works",
+      "INSPECTION": "Inspection",
+      "WARRANTY": "Warranty"
+    },
+    "Severity": {
+      "LOW": "Low",
+      "MEDIUM": "Medium",
+      "HIGH": "High",
+      "CRITICAL": "Critical"
+    },
+    "CriticalityStatus": {
+      "OPEN": "Open",
+      "ACKNOWLEDGED": "Acknowledged",
+      "IN_PROGRESS": "In progress",
+      "RESOLVED": "Resolved",
+      "DISMISSED": "Dismissed"
+    },
+    "AssignmentRole": {
+      "LEAD": "Lead",
+      "TECHNICIAN": "Technician",
+      "SUPPORT": "Support"
+    },
+    "AssignmentStatus": {
+      "PLANNED": "Planned",
+      "CONFIRMED": "Confirmed",
+      "ACTIVE": "Active",
+      "COMPLETED": "Completed",
+      "CANCELLED": "Cancelled"
+    }
+  }
+}
