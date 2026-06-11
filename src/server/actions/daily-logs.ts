@@ -5,6 +5,7 @@ import { z } from "zod";
 import { prisma } from "@/server/db";
 import { requireTechnician } from "@/server/access";
 import { storage } from "@/server/services/storage";
+import { enqueueJob } from "@/server/jobs/enqueue";
 import {
   type ActionResult,
   fromZodError,
@@ -193,11 +194,13 @@ export async function submitDailyLog(logId: string): Promise<ActionResult> {
   if (!log || log.technicianId !== technician.id) return failure("notFound");
   if (log.status !== "DRAFT") return failure("alreadySubmitted");
 
-  await prisma.dailyLog.update({
-    where: { id: logId },
-    data: { status: "SUBMITTED", submittedAt: new Date() },
+  await prisma.$transaction(async (tx) => {
+    await tx.dailyLog.update({
+      where: { id: logId },
+      data: { status: "SUBMITTED", submittedAt: new Date() },
+    });
+    await enqueueJob("DAILY_LOG_ANALYSIS", { dailyLogId: logId }, tx);
   });
-  // Phase 4 hooks in here: enqueue DAILY_LOG_ANALYSIS.
   revalidate(log.projectId);
   return success;
 }

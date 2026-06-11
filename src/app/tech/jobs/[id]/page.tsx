@@ -8,6 +8,7 @@ import {
   Circle,
   ClipboardList,
   MapPin,
+  Mic,
   Ship,
 } from "lucide-react";
 import { auth } from "@/server/auth";
@@ -103,11 +104,18 @@ export default async function TechJobDetail({
         </CardContent>
       </Card>
 
-      <Button asChild size="lg" className="w-full">
-        <Link href={`/tech/jobs/${project.id}/log`}>
-          <ClipboardList className="size-5" aria-hidden /> {t("openLog")}
-        </Link>
-      </Button>
+      <div className="grid grid-cols-1 gap-2">
+        <Button asChild size="lg" className="w-full">
+          <Link href={`/tech/jobs/${project.id}/log`}>
+            <ClipboardList className="size-5" aria-hidden /> {t("openLog")}
+          </Link>
+        </Button>
+        <Button asChild size="lg" variant="outline" className="w-full">
+          <Link href={`/tech/jobs/${project.id}/meeting`}>
+            <Mic className="size-5" aria-hidden /> {tHome("meetingButton")}
+          </Link>
+        </Button>
+      </div>
 
       {project.milestones.length > 0 ? (
         <Card>

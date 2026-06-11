@@ -29,10 +29,10 @@ const ITEMS = [
   { key: "clients", href: "/manager/clients", icon: Building2, ready: true },
   { key: "technicians", href: "/manager/technicians", icon: Users, ready: true },
   { key: "planning", href: "/manager/planning", icon: CalendarDays, ready: true },
-  { key: "criticalities", href: "/manager/criticalities", icon: AlertTriangle, ready: false },
+  { key: "criticalities", href: "/manager/criticalities", icon: AlertTriangle, ready: true },
   { key: "reports", href: "/manager/reports", icon: FileText, ready: false },
   { key: "analytics", href: "/manager/analytics", icon: BarChart3, ready: false },
-  { key: "settings", href: "/manager/settings", icon: Settings, ready: false },
+  { key: "settings", href: "/manager/settings", icon: Settings, ready: true },
 ] as const;
 
 export function ManagerNav() {

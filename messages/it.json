@@ -67,7 +67,8 @@
     "viewJob": "Apri",
     "directivesTitle": "Disposizioni",
     "directivesEmpty": "Nessuna disposizione dall'ufficio.",
-    "profileTitle": "Profilo"
+    "profileTitle": "Profilo",
+    "meetingButton": "Riunione mattutina"
   },
   "enums": {
     "ProjectStatus": {
@@ -150,6 +151,42 @@
       "DRAFT": "Bozza",
       "SUBMITTED": "Inviato",
       "ANALYZED": "Analizzato"
+    },
+    "CriticalitySource": {
+      "DAILY_LOG": "Daily log",
+      "MEETING": "Riunione",
+      "PHOTO": "Foto",
+      "MANUAL": "Manuale"
+    },
+    "DirectiveStatus": {
+      "SENT": "Inviata",
+      "READ": "Letta",
+      "ACKNOWLEDGED": "Confermata",
+      "DONE": "Completata"
+    },
+    "RecordingStatus": {
+      "UPLOADED": "Caricata",
+      "TRANSCRIBING": "In trascrizione",
+      "TRANSCRIBED": "Trascritta",
+      "ANALYZED": "Analizzata",
+      "FAILED": "Fallita"
+    },
+    "JobStatus": {
+      "PENDING": "In coda",
+      "RUNNING": "In esecuzione",
+      "SUCCEEDED": "Riuscito",
+      "FAILED": "Fallito",
+      "CANCELLED": "Annullato"
+    },
+    "CriticalityCategory": {
+      "SCHEDULE_CONFLICT": "Conflitto programma",
+      "TOLERANCE_OUT_OF_SPEC": "Fuori tolleranza",
+      "LEAK": "Perdita",
+      "DAMAGE": "Danno",
+      "SAFETY": "Sicurezza",
+      "LOGISTICS": "Logistica",
+      "QUALITY": "Qualità",
+      "OTHER": "Altro"
     }
   },
   "forms": {
@@ -319,5 +356,68 @@
     "draftBadge": "Bozza",
     "analyzedBadge": "Analizzato",
     "type": "Tipo"
+  },
+  "meeting": {
+    "title": "Riunione mattutina",
+    "record": "Registra riunione",
+    "stop": "Stop",
+    "pause": "Pausa",
+    "resume": "Riprendi",
+    "recording": "Registrazione…",
+    "uploadAndTranscribe": "Carica e trascrivi",
+    "discard": "Scarta",
+    "uploading": "Caricamento…",
+    "sent": "Registrazione caricata. Trascrizione in corso.",
+    "history": "Riunioni",
+    "noRecordings": "Nessuna registrazione.",
+    "transcript": "Trascrizione",
+    "micDenied": "Accesso al microfono negato",
+    "elapsed": "Durata",
+    "processing": "Elaborazione…",
+    "hint": "Registra la riunione giornaliera col superintendente. Verrà trascritta e analizzata per conflitti di programma e problemi tecnici.",
+    "uploadFailed": "Caricamento fallito"
+  },
+  "criticalities": {
+    "title": "Criticità",
+    "empty": "Nessuna criticità con questi filtri.",
+    "filterStatus": "Stato",
+    "filterSeverity": "Severità",
+    "filterSource": "Fonte",
+    "all": "Tutte",
+    "source": "Fonte",
+    "sendDirective": "Invia disposizione",
+    "directiveMessage": "Istruzioni per il tecnico",
+    "recommendedAction": "Azione consigliata",
+    "sourceExcerpt": "Fonte",
+    "confidence": "Confidenza AI",
+    "acknowledge": "Prendi in carico",
+    "inProgress": "In lavorazione",
+    "resolve": "Risolvi",
+    "dismiss": "Scarta",
+    "reopen": "Riapri",
+    "directives": "Disposizioni",
+    "noDirectives": "Nessuna disposizione inviata.",
+    "openCount": "{count} aperte"
+  },
+  "directives": {
+    "title": "Disposizioni",
+    "empty": "Nessuna disposizione dall'ufficio.",
+    "acknowledge": "Conferma ricezione",
+    "acknowledged": "Confermata",
+    "from": "Da {name}",
+    "relatedTo": "Relativa a"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "jobs": "Job in background",
+    "jobsDescription": "Analisi AI, trascrizioni e generazione report",
+    "templates": "Template report",
+    "templatesDescription": "Struttura dei report di servizio generati",
+    "retry": "Riprova",
+    "attempts": "Tentativi",
+    "noJobs": "Nessun job.",
+    "error": "Errore",
+    "type": "Tipo",
+    "created": "Creato"
   }
 }

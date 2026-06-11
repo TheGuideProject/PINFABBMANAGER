@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { auth } from "@/server/auth";
 import { ManagerNav } from "@/components/layout/manager-nav";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
+import { NotificationBell } from "@/components/layout/notification-bell";
 import { UserMenu } from "@/components/layout/user-menu";
 
 export default async function ManagerLayout({
@@ -34,6 +35,7 @@ export default async function ManagerLayout({
             <span className="text-sm font-semibold">{tc("appName")}</span>
           </div>
           <div className="ml-auto flex items-center gap-1.5">
+            <NotificationBell />
             <LocaleSwitcher />
             <UserMenu name={user.name ?? ""} email={user.email ?? ""} />
           </div>

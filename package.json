@@ -15,6 +15,7 @@
     "icons": "node scripts/generate-icons.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.1",
     "@aws-sdk/client-s3": "^3.1067.0",
     "@aws-sdk/s3-request-presigner": "^3.1067.0",
     "@fullcalendar/core": "^6.1.20",

@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { auth } from "@/server/auth";
 import { TechTabs } from "@/components/layout/tech-tabs";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
+import { NotificationBell } from "@/components/layout/notification-bell";
 import { UserMenu } from "@/components/layout/user-menu";
 
 export default async function TechLayout({
@@ -21,6 +22,7 @@ export default async function TechLayout({
             <span className="text-sm font-semibold">{tc("appName")}</span>
           </div>
           <div className="flex items-center gap-1">
+            <NotificationBell />
             <LocaleSwitcher />
             <UserMenu name={user.name ?? ""} email={user.email ?? ""} />
           </div>

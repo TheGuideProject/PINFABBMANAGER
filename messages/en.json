@@ -67,7 +67,8 @@
     "viewJob": "Open",
     "directivesTitle": "Directives",
     "directivesEmpty": "No directives from the office.",
-    "profileTitle": "Profile"
+    "profileTitle": "Profile",
+    "meetingButton": "Morning meeting"
   },
   "enums": {
     "ProjectStatus": {
@@ -150,6 +151,42 @@
       "DRAFT": "Draft",
       "SUBMITTED": "Submitted",
       "ANALYZED": "Analyzed"
+    },
+    "CriticalitySource": {
+      "DAILY_LOG": "Daily log",
+      "MEETING": "Meeting",
+      "PHOTO": "Photo",
+      "MANUAL": "Manual"
+    },
+    "DirectiveStatus": {
+      "SENT": "Sent",
+      "READ": "Read",
+      "ACKNOWLEDGED": "Acknowledged",
+      "DONE": "Done"
+    },
+    "RecordingStatus": {
+      "UPLOADED": "Uploaded",
+      "TRANSCRIBING": "Transcribing",
+      "TRANSCRIBED": "Transcribed",
+      "ANALYZED": "Analyzed",
+      "FAILED": "Failed"
+    },
+    "JobStatus": {
+      "PENDING": "Pending",
+      "RUNNING": "Running",
+      "SUCCEEDED": "Succeeded",
+      "FAILED": "Failed",
+      "CANCELLED": "Cancelled"
+    },
+    "CriticalityCategory": {
+      "SCHEDULE_CONFLICT": "Schedule conflict",
+      "TOLERANCE_OUT_OF_SPEC": "Out of tolerance",
+      "LEAK": "Leak",
+      "DAMAGE": "Damage",
+      "SAFETY": "Safety",
+      "LOGISTICS": "Logistics",
+      "QUALITY": "Quality",
+      "OTHER": "Other"
     }
   },
   "forms": {
@@ -319,5 +356,68 @@
     "draftBadge": "Draft",
     "analyzedBadge": "Analyzed",
     "type": "Type"
+  },
+  "meeting": {
+    "title": "Morning meeting",
+    "record": "Record meeting",
+    "stop": "Stop",
+    "pause": "Pause",
+    "resume": "Resume",
+    "recording": "Recording…",
+    "uploadAndTranscribe": "Upload & transcribe",
+    "discard": "Discard",
+    "uploading": "Uploading…",
+    "sent": "Recording uploaded. Transcription in progress.",
+    "history": "Meetings",
+    "noRecordings": "No recordings yet.",
+    "transcript": "Transcript",
+    "micDenied": "Microphone access denied",
+    "elapsed": "Elapsed",
+    "processing": "Processing…",
+    "hint": "Record the daily meeting with the superintendent. It will be transcribed and analyzed for schedule conflicts and technical issues.",
+    "uploadFailed": "Upload failed"
+  },
+  "criticalities": {
+    "title": "Criticalities",
+    "empty": "No criticalities match the filters.",
+    "filterStatus": "Status",
+    "filterSeverity": "Severity",
+    "filterSource": "Source",
+    "all": "All",
+    "source": "Source",
+    "sendDirective": "Send directive",
+    "directiveMessage": "Instructions for the technician",
+    "recommendedAction": "Recommended action",
+    "sourceExcerpt": "Source",
+    "confidence": "AI confidence",
+    "acknowledge": "Acknowledge",
+    "inProgress": "In progress",
+    "resolve": "Resolve",
+    "dismiss": "Dismiss",
+    "reopen": "Reopen",
+    "directives": "Directives",
+    "noDirectives": "No directives sent.",
+    "openCount": "{count} open"
+  },
+  "directives": {
+    "title": "Directives",
+    "empty": "No directives from the office.",
+    "acknowledge": "Acknowledge",
+    "acknowledged": "Acknowledged",
+    "from": "From {name}",
+    "relatedTo": "Related to"
+  },
+  "settings": {
+    "title": "Settings",
+    "jobs": "Background jobs",
+    "jobsDescription": "AI analyses, transcriptions and report generation",
+    "templates": "Report templates",
+    "templatesDescription": "Structure of generated service reports",
+    "retry": "Retry",
+    "attempts": "Attempts",
+    "noJobs": "No jobs yet.",
+    "error": "Error",
+    "type": "Type",
+    "created": "Created"
   }
 }
