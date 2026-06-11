@@ -109,6 +109,146 @@
       "ACTIVE": "Attiva",
       "COMPLETED": "Completata",
       "CANCELLED": "Annullata"
+    },
+    "ClientType": {
+      "SHIPOWNER": "Armatore",
+      "SHIPYARD": "Cantiere",
+      "OPERATOR": "Operatore",
+      "OTHER": "Altro"
+    },
+    "LocationKind": {
+      "SHIPYARD": "Cantiere",
+      "DRYDOCK": "Bacino",
+      "PORT": "Porto",
+      "ANCHORAGE": "Rada"
+    }
+  },
+  "forms": {
+    "save": "Salva",
+    "saving": "Salvataggio…",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "deleted": "Eliminato",
+    "saved": "Salvato",
+    "edit": "Modifica",
+    "new": "Nuovo",
+    "deleteConfirmTitle": "Eliminare?",
+    "deleteConfirmBody": "L'operazione non può essere annullata.",
+    "overlapWarning": "Attenzione: tecnico già assegnato a {code} in questo periodo",
+    "search": "Cerca…",
+    "errors": {
+      "validation": "Controlla i campi evidenziati",
+      "hasProjects": "Impossibile eliminare: ci sono progetti collegati",
+      "codeTaken": "Codice progetto già in uso",
+      "emailTaken": "Email già in uso",
+      "alreadyAssigned": "Tecnico già assegnato a questo progetto",
+      "passwordRequired": "La password è obbligatoria per i nuovi account",
+      "notFound": "Non trovato",
+      "genericError": "Qualcosa è andato storto"
+    }
+  },
+  "entities": {
+    "name": "Nome",
+    "email": "Email",
+    "password": "Password",
+    "passwordKeep": "Password (vuota per non cambiare)",
+    "phone": "Telefono",
+    "homeBase": "Base",
+    "language": "Lingua",
+    "active": "Attivo",
+    "type": "Tipo",
+    "country": "Paese",
+    "city": "Città",
+    "notes": "Note",
+    "imo": "Numero IMO",
+    "flag": "Bandiera",
+    "vesselType": "Tipo nave",
+    "stabilizerModel": "Modello stabilizzatore",
+    "finCount": "Numero pinne",
+    "client": "Cliente",
+    "vessel": "Nave",
+    "location": "Località",
+    "lat": "Latitudine",
+    "lng": "Longitudine",
+    "timezone": "Fuso orario (IANA)",
+    "code": "Codice",
+    "title": "Titolo",
+    "status": "Stato",
+    "complexity": "Complessità (1-5)",
+    "startDate": "Data inizio",
+    "endDate": "Data fine",
+    "description": "Descrizione",
+    "technician": "Tecnico",
+    "role": "Ruolo",
+    "travelOut": "Partenza viaggio",
+    "travelReturn": "Rientro viaggio",
+    "dueDate": "Scadenza",
+    "actions": "Azioni",
+    "none": "—"
+  },
+  "pages": {
+    "clients": {
+      "title": "Clienti",
+      "newClient": "Nuovo cliente",
+      "editClient": "Modifica cliente",
+      "empty": "Nessun cliente.",
+      "vessels": "Navi",
+      "projects": "Progetti"
+    },
+    "vessels": {
+      "title": "Navi",
+      "newVessel": "Nuova nave",
+      "editVessel": "Modifica nave",
+      "empty": "Nessuna nave."
+    },
+    "locations": {
+      "title": "Località",
+      "newLocation": "Nuova località",
+      "editLocation": "Modifica località",
+      "empty": "Nessuna località.",
+      "manage": "Gestisci località"
+    },
+    "technicians": {
+      "title": "Tecnici",
+      "newTechnician": "Nuovo tecnico",
+      "editTechnician": "Modifica tecnico",
+      "empty": "Nessun tecnico.",
+      "skills": "Competenze",
+      "deployedNow": "In trasferta",
+      "deactivate": "Disattiva",
+      "activate": "Attiva",
+      "inactive": "Inattivo"
+    },
+    "projects": {
+      "title": "Progetti",
+      "newProject": "Nuovo progetto",
+      "editProject": "Modifica progetto",
+      "empty": "Nessun progetto trovato.",
+      "overview": "Panoramica",
+      "team": "Squadra",
+      "activity": "Attività",
+      "criticalities": "Criticità",
+      "milestones": "Milestone",
+      "addMilestone": "Aggiungi milestone",
+      "noMilestones": "Nessuna milestone.",
+      "addAssignment": "Assegna tecnico",
+      "noTeam": "Nessun assegnato.",
+      "activityPlaceholder": "I daily log dei tecnici appariranno qui (Fase 3).",
+      "criticalitiesPlaceholder": "Le criticità rilevate dall'AI appariranno qui (Fase 4).",
+      "dates": "Date",
+      "planned": "Pianificate",
+      "actual": "Effettive",
+      "details": "Dettagli"
+    },
+    "map": {
+      "title": "Mappa",
+      "activeProjects": "{count, plural, =0 {Nessun progetto attivo} one {# progetto attivo} other {# progetti attivi}}",
+      "legend": "Stato"
+    },
+    "planning": {
+      "title": "Pianificazione",
+      "projectsLayer": "Progetti",
+      "assignmentsLayer": "Assegnazioni"
     }
   }
 }

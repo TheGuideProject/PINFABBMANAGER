@@ -109,6 +109,146 @@
       "ACTIVE": "Active",
       "COMPLETED": "Completed",
       "CANCELLED": "Cancelled"
+    },
+    "ClientType": {
+      "SHIPOWNER": "Shipowner",
+      "SHIPYARD": "Shipyard",
+      "OPERATOR": "Operator",
+      "OTHER": "Other"
+    },
+    "LocationKind": {
+      "SHIPYARD": "Shipyard",
+      "DRYDOCK": "Dry dock",
+      "PORT": "Port",
+      "ANCHORAGE": "Anchorage"
+    }
+  },
+  "forms": {
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "deleted": "Deleted",
+    "saved": "Saved",
+    "edit": "Edit",
+    "new": "New",
+    "deleteConfirmTitle": "Delete?",
+    "deleteConfirmBody": "This action cannot be undone.",
+    "overlapWarning": "Warning: technician already assigned to {code} in this period",
+    "search": "Search…",
+    "errors": {
+      "validation": "Check the highlighted fields",
+      "hasProjects": "Cannot delete: there are linked projects",
+      "codeTaken": "Project code already in use",
+      "emailTaken": "Email already in use",
+      "alreadyAssigned": "Technician already assigned to this project",
+      "passwordRequired": "Password is required for new accounts",
+      "notFound": "Not found",
+      "genericError": "Something went wrong"
+    }
+  },
+  "entities": {
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "passwordKeep": "Password (leave blank to keep)",
+    "phone": "Phone",
+    "homeBase": "Home base",
+    "language": "Language",
+    "active": "Active",
+    "type": "Type",
+    "country": "Country",
+    "city": "City",
+    "notes": "Notes",
+    "imo": "IMO number",
+    "flag": "Flag",
+    "vesselType": "Vessel type",
+    "stabilizerModel": "Stabilizer model",
+    "finCount": "Fin count",
+    "client": "Client",
+    "vessel": "Vessel",
+    "location": "Location",
+    "lat": "Latitude",
+    "lng": "Longitude",
+    "timezone": "Timezone (IANA)",
+    "code": "Code",
+    "title": "Title",
+    "status": "Status",
+    "complexity": "Complexity (1-5)",
+    "startDate": "Start date",
+    "endDate": "End date",
+    "description": "Description",
+    "technician": "Technician",
+    "role": "Role",
+    "travelOut": "Travel out",
+    "travelReturn": "Travel return",
+    "dueDate": "Due date",
+    "actions": "Actions",
+    "none": "—"
+  },
+  "pages": {
+    "clients": {
+      "title": "Clients",
+      "newClient": "New client",
+      "editClient": "Edit client",
+      "empty": "No clients yet.",
+      "vessels": "Vessels",
+      "projects": "Projects"
+    },
+    "vessels": {
+      "title": "Vessels",
+      "newVessel": "New vessel",
+      "editVessel": "Edit vessel",
+      "empty": "No vessels yet."
+    },
+    "locations": {
+      "title": "Locations",
+      "newLocation": "New location",
+      "editLocation": "Edit location",
+      "empty": "No locations yet.",
+      "manage": "Manage locations"
+    },
+    "technicians": {
+      "title": "Technicians",
+      "newTechnician": "New technician",
+      "editTechnician": "Edit technician",
+      "empty": "No technicians yet.",
+      "skills": "Skills",
+      "deployedNow": "Deployed now",
+      "deactivate": "Deactivate",
+      "activate": "Activate",
+      "inactive": "Inactive"
+    },
+    "projects": {
+      "title": "Projects",
+      "newProject": "New project",
+      "editProject": "Edit project",
+      "empty": "No projects found.",
+      "overview": "Overview",
+      "team": "Team",
+      "activity": "Activity",
+      "criticalities": "Criticalities",
+      "milestones": "Milestones",
+      "addMilestone": "Add milestone",
+      "noMilestones": "No milestones.",
+      "addAssignment": "Assign technician",
+      "noTeam": "Nobody assigned yet.",
+      "activityPlaceholder": "Daily logs from technicians will appear here (Phase 3).",
+      "criticalitiesPlaceholder": "AI-detected criticalities will appear here (Phase 4).",
+      "dates": "Dates",
+      "planned": "Planned",
+      "actual": "Actual",
+      "details": "Details"
+    },
+    "map": {
+      "title": "Map",
+      "activeProjects": "{count, plural, =0 {No active projects} one {# active project} other {# active projects}}",
+      "legend": "Status"
+    },
+    "planning": {
+      "title": "Planning",
+      "projectsLayer": "Projects",
+      "assignmentsLayer": "Assignments"
     }
   }
 }

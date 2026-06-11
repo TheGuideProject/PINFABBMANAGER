@@ -23,12 +23,12 @@ import { cn } from "@/lib/utils";
 // is already readable in the sidebar during the demo.
 const ITEMS = [
   { key: "dashboard", href: "/manager", icon: LayoutDashboard, ready: true },
-  { key: "map", href: "/manager/map", icon: Map, ready: false },
-  { key: "projects", href: "/manager/projects", icon: FolderKanban, ready: false },
-  { key: "vessels", href: "/manager/vessels", icon: Ship, ready: false },
-  { key: "clients", href: "/manager/clients", icon: Building2, ready: false },
-  { key: "technicians", href: "/manager/technicians", icon: Users, ready: false },
-  { key: "planning", href: "/manager/planning", icon: CalendarDays, ready: false },
+  { key: "map", href: "/manager/map", icon: Map, ready: true },
+  { key: "projects", href: "/manager/projects", icon: FolderKanban, ready: true },
+  { key: "vessels", href: "/manager/vessels", icon: Ship, ready: true },
+  { key: "clients", href: "/manager/clients", icon: Building2, ready: true },
+  { key: "technicians", href: "/manager/technicians", icon: Users, ready: true },
+  { key: "planning", href: "/manager/planning", icon: CalendarDays, ready: true },
   { key: "criticalities", href: "/manager/criticalities", icon: AlertTriangle, ready: false },
   { key: "reports", href: "/manager/reports", icon: FileText, ready: false },
   { key: "analytics", href: "/manager/analytics", icon: BarChart3, ready: false },
