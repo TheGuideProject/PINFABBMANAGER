@@ -31,7 +31,7 @@ const ITEMS = [
   { key: "planning", href: "/manager/planning", icon: CalendarDays, ready: true },
   { key: "criticalities", href: "/manager/criticalities", icon: AlertTriangle, ready: true },
   { key: "reports", href: "/manager/reports", icon: FileText, ready: true },
-  { key: "analytics", href: "/manager/analytics", icon: BarChart3, ready: false },
+  { key: "analytics", href: "/manager/analytics", icon: BarChart3, ready: true },
   { key: "settings", href: "/manager/settings", icon: Settings, ready: true },
 ] as const;
 

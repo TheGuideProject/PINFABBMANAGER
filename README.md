@@ -62,9 +62,12 @@ src/components/          ui (shadcn), layout
 ## Roadmap (phases)
 
 1. ✅ Foundation: auth, roles, i18n, dashboards, PWA shell, Railway deploy
-2. Management CRUD, world map (Leaflet), planning calendar
-3. Technician flows: daily logs, measurements, photo upload (R2 storage)
-4. AI pipeline: daily-log analysis, meeting transcription + analysis, criticality
-   center, directives, notifications (Claude API + Whisper)
-5. Report templates, AI report generation, signatures, PDF, archive
-6. Analytics: technician performance, client patterns
+2. ✅ Management CRUD, world map (Leaflet), planning calendar
+3. ✅ Technician flows: daily logs, measurements, photo upload (R2 storage)
+4. ✅ AI pipeline: daily-log analysis, meeting transcription + analysis,
+   criticality center, directives, notifications (Claude API + Whisper)
+5. ✅ Report templates, AI report generation, signatures, PDF, archive
+6. ✅ Analytics: technician performance, client patterns, durations
+
+Next ideas: offline PWA (Serwist), push notifications, real PINFAB report
+template import, photo AI analysis on upload.

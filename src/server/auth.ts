@@ -11,6 +11,31 @@ const credentialsSchema = z.object({
   password: z.string().min(1),
 });
 
+// In-memory brute-force throttle (single instance on Railway): 5 failed
+// attempts per email per 15 minutes.
+const WINDOW_MS = 15 * 60 * 1000;
+const MAX_FAILURES = 5;
+const failures = new Map<string, { count: number; firstAt: number }>();
+
+function isThrottled(email: string) {
+  const entry = failures.get(email);
+  if (!entry) return false;
+  if (Date.now() - entry.firstAt > WINDOW_MS) {
+    failures.delete(email);
+    return false;
+  }
+  return entry.count >= MAX_FAILURES;
+}
+
+function recordFailure(email: string) {
+  const entry = failures.get(email);
+  if (!entry || Date.now() - entry.firstAt > WINDOW_MS) {
+    failures.set(email, { count: 1, firstAt: Date.now() });
+  } else {
+    entry.count += 1;
+  }
+}
+
 export const { handlers, auth, signIn, signOut } = NextAuth({
   ...authConfig,
   providers: [
@@ -23,13 +48,21 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         const parsed = credentialsSchema.safeParse(credentials);
         if (!parsed.success) return null;
 
-        const user = await prisma.user.findUnique({
-          where: { email: parsed.data.email.toLowerCase() },
-        });
-        if (!user || !user.active) return null;
+        const email = parsed.data.email.toLowerCase();
+        if (isThrottled(email)) return null;
+
+        const user = await prisma.user.findUnique({ where: { email } });
+        if (!user || !user.active) {
+          recordFailure(email);
+          return null;
+        }
 
         const valid = await bcrypt.compare(parsed.data.password, user.passwordHash);
-        if (!valid) return null;
+        if (!valid) {
+          recordFailure(email);
+          return null;
+        }
+        failures.delete(email);
 
         return {
           id: user.id,

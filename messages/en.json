@@ -488,5 +488,26 @@
       "photos": "Photos (auto)",
       "signatures": "Signatures (auto)"
     }
+  },
+  "analytics": {
+    "title": "Analytics",
+    "techPerformance": "Technician performance",
+    "technician": "Technician",
+    "logsSubmitted": "Logs",
+    "outOfSpecRate": "Out-of-spec",
+    "criticalitiesRaised": "Criticalities",
+    "jobsCompleted": "Jobs done",
+    "ackLatency": "Avg. ack time",
+    "hours": "{count}h",
+    "noData": "Not enough data yet.",
+    "criticalitiesByCategory": "Criticalities by category",
+    "criticalitiesByClient": "Criticalities by client",
+    "durations": "Planned vs actual duration (days, completed jobs)",
+    "planned": "Planned",
+    "actual": "Actual",
+    "completedProjects": "Completed projects",
+    "countersignedReports": "Countersigned reports",
+    "resolvedCriticalities": "Resolved criticalities",
+    "avgResolutionDays": "Avg. resolution (days)"
   }
 }

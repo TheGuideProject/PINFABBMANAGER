@@ -488,5 +488,26 @@
       "photos": "Foto (auto)",
       "signatures": "Firme (auto)"
     }
+  },
+  "analytics": {
+    "title": "Analytics",
+    "techPerformance": "Performance tecnici",
+    "technician": "Tecnico",
+    "logsSubmitted": "Log",
+    "outOfSpecRate": "Fuori tolleranza",
+    "criticalitiesRaised": "Criticità",
+    "jobsCompleted": "Lavori chiusi",
+    "ackLatency": "Tempo medio ack",
+    "hours": "{count}h",
+    "noData": "Dati ancora insufficienti.",
+    "criticalitiesByCategory": "Criticità per categoria",
+    "criticalitiesByClient": "Criticità per cliente",
+    "durations": "Durata pianificata vs effettiva (giorni, lavori completati)",
+    "planned": "Pianificata",
+    "actual": "Effettiva",
+    "completedProjects": "Progetti completati",
+    "countersignedReports": "Report controfirmati",
+    "resolvedCriticalities": "Criticità risolte",
+    "avgResolutionDays": "Risoluzione media (giorni)"
   }
 }
