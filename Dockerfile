@@ -6,10 +6,12 @@ WORKDIR /app
 RUN apt-get update -y && apt-get install -y --no-install-recommends openssl ca-certificates && rm -rf /var/lib/apt/lists/*
 
 COPY package.json package-lock.json ./
+# Schema + config must exist before `npm ci`: postinstall runs `prisma generate`
+COPY prisma ./prisma
+COPY prisma.config.ts ./
 RUN npm ci
 
 COPY . .
-RUN npx prisma generate
 RUN npm run build
 
 # ── Runtime stage ────────────────────────────────────────────
