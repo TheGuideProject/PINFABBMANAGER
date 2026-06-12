@@ -17,7 +17,7 @@ const client = new S3Client({
   },
 });
 
-const bucket = () => process.env.S3_BUCKET ?? "pinfab";
+const bucket = () => process.env.S3_BUCKET ?? "pinfabb";
 
 export const r2StorageService: StorageService = {
   async put(key, body, mimeType) {

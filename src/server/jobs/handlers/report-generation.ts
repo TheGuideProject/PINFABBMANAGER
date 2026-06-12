@@ -8,7 +8,7 @@ import {
 } from "@/lib/report-template";
 import type { AiJob } from "@/generated/prisma/client";
 
-const REPORT_SYSTEM = `You are the report writer for PINFAB, a company that installs and services ship fin stabilizers. You draft the sections of the official end-of-job Service Report from the field data collected by technicians (daily logs, measurements, criticalities, photo captions).
+const REPORT_SYSTEM = `You are the report writer for PINFABB, a company that installs and services ship fin stabilizers. You draft the sections of the official end-of-job Service Report from the field data collected by technicians (daily logs, measurements, criticalities, photo captions).
 
 Rules:
 - Professional marine-engineering English, third person, factual and concise.

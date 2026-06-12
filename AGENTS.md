@@ -4,7 +4,7 @@
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
-# PINFAB Manager — project notes
+# PINFABB Manager — project notes
 
 - Stack: Next.js 16 (App Router, Turbopack), Prisma 7 (driver adapter `@prisma/adapter-pg`,
   client generated to `src/generated/prisma` — import from `@/generated/prisma/client`),
@@ -16,6 +16,6 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - Commands: `npm run dev` · `npm run build` · `npm run lint` ·
   `npx prisma migrate dev` · `npx prisma db seed`.
 - Local Postgres for dev: see DATABASE_URL in `.env` (a throwaway cluster works:
-  `initdb` + `pg_ctl start` + `createdb pinfab`).
+  `initdb` + `pg_ctl start` + `createdb pinfabb`).
 - Translations live in `messages/it.json` / `messages/en.json` — every user-facing
   string needs both.

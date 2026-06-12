@@ -26,7 +26,7 @@ export function LoginForm() {
           type="email"
           autoComplete="email"
           required
-          placeholder="name@pinfab.it"
+          placeholder="name@pinfabb.it"
           className="border-slate-700 bg-slate-950 text-white placeholder:text-slate-600"
         />
       </div>

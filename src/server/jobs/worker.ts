@@ -94,11 +94,11 @@ async function loop() {
   }
 }
 
-const globalForWorker = globalThis as unknown as { __pinfabWorkerStarted?: boolean };
+const globalForWorker = globalThis as unknown as { __pinfabbWorkerStarted?: boolean };
 
 export function startWorker() {
-  if (globalForWorker.__pinfabWorkerStarted) return;
-  globalForWorker.__pinfabWorkerStarted = true;
+  if (globalForWorker.__pinfabbWorkerStarted) return;
+  globalForWorker.__pinfabbWorkerStarted = true;
 
   // Re-queue jobs orphaned by a previous deploy (RUNNING but never finished).
   void prisma.aiJob

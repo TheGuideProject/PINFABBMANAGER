@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "PINFAB Manager",
+    "appName": "PINFABB Manager",
     "tagline": "Fin stabilizer operations, worldwide",
     "language": "Language",
     "italian": "Italiano",
@@ -15,7 +15,7 @@
   },
   "login": {
     "title": "Sign in",
-    "subtitle": "Access the PINFAB operations platform",
+    "subtitle": "Access the PINFABB operations platform",
     "email": "Email",
     "password": "Password",
     "submit": "Sign in",

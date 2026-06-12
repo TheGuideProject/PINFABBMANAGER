@@ -272,13 +272,13 @@ export async function renderReportPdf(reportId: string): Promise<Buffer> {
   const pdf = (
     <Document
       title={`${project.code} — Service Report`}
-      author="PINFAB"
-      creator="PINFAB Manager"
+      author="PINFABB"
+      creator="PINFABB Manager"
     >
       <Page size="A4" style={styles.page}>
         <View style={{ marginTop: 80 }}>
           <Text style={{ fontSize: 11, color: "#0ea5e9", marginBottom: 12 }}>
-            PINFAB — Fin Stabilizer Services
+            PINFABB — Fin Stabilizer Services
           </Text>
           <Text style={styles.coverTitle}>Service Report</Text>
           <Text style={styles.coverSub}>{project.title}</Text>
@@ -300,7 +300,7 @@ export async function renderReportPdf(reportId: string): Promise<Buffer> {
           </View>
         </View>
         <View style={styles.footer} fixed>
-          <Text>PINFAB Manager — confidential</Text>
+          <Text>PINFABB Manager — confidential</Text>
           <Text
             render={({ pageNumber, totalPages }) => `${pageNumber}/${totalPages}`}
           />

@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "PINFAB Manager",
+    "appName": "PINFABB Manager",
     "tagline": "Operazioni pinne stabilizzatrici, nel mondo",
     "language": "Lingua",
     "italian": "Italiano",
@@ -15,7 +15,7 @@
   },
   "login": {
     "title": "Accedi",
-    "subtitle": "Entra nella piattaforma operativa PINFAB",
+    "subtitle": "Entra nella piattaforma operativa PINFABB",
     "email": "Email",
     "password": "Password",
     "submit": "Accedi",

@@ -40,7 +40,7 @@ export async function runMeetingAnalysis(job: AiJob) {
           context,
           "",
           `=== MORNING MEETING TRANSCRIPT (${recording.recordedAt.toISOString().slice(0, 10)}, recorded by ${recording.technician.user.name}) ===`,
-          "The meeting is between PINFAB technicians, the yard superintendent and other trades.",
+          "The meeting is between PINFABB technicians, the yard superintendent and other trades.",
           "It may be in English or Italian, with shipyard jargon and imperfect transcription.",
           "",
           recording.transcript.text,

@@ -1,4 +1,4 @@
-# PINFAB Manager
+# PINFABB Manager
 
 Management platform for international fin stabilizer operations: projects, vessels,
 technicians, daily field reports, AI-driven criticality detection and signed service
@@ -21,11 +21,11 @@ npm run dev
 
 | Role       | Email                      | Password    |
 | ---------- | -------------------------- | ----------- |
-| Admin      | `admin@pinfab.it`          | `Admin123!` |
-| Manager    | `manager@pinfab.it`        | `Manager123!` |
-| Technician | `marco.rossi@pinfab.it`    | `Tech123!`  |
-| Technician | `luca.bianchi@pinfab.it`   | `Tech123!`  |
-| Technician | `andrei.popescu@pinfab.it` | `Tech123!`  |
+| Admin      | `admin@pinfabb.it`          | `Admin123!` |
+| Manager    | `manager@pinfabb.it`        | `Manager123!` |
+| Technician | `marco.rossi@pinfabb.it`    | `Tech123!`  |
+| Technician | `luca.bianchi@pinfabb.it`   | `Tech123!`  |
+| Technician | `andrei.popescu@pinfabb.it` | `Tech123!`  |
 
 Managers land on `/manager` (desktop dashboard), technicians on `/tech` (mobile PWA,
 installable via "Add to Home Screen").
@@ -69,5 +69,5 @@ src/components/          ui (shadcn), layout
 5. ✅ Report templates, AI report generation, signatures, PDF, archive
 6. ✅ Analytics: technician performance, client patterns, durations
 
-Next ideas: offline PWA (Serwist), push notifications, real PINFAB report
+Next ideas: offline PWA (Serwist), push notifications, real PINFABB report
 template import, photo AI analysis on upload.

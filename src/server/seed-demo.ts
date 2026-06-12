@@ -13,13 +13,39 @@ const day = (offset: number) => {
 /** Seeds demo accounts and data only if the database has no users. */
 export async function seedDemoIfEmpty(prisma: PrismaClient) {
   const users = await prisma.user.count();
-  if (users > 0) return false;
+  if (users > 0) {
+    await fixLegacyNaming(prisma);
+    return false;
+  }
   console.log("[bootstrap] empty database — loading demo data…");
   await seedDemoData(prisma);
   console.log(
-    "[bootstrap] demo data ready. Login: manager@pinfab.it / Manager123! · marco.rossi@pinfab.it / Tech123!",
+    "[bootstrap] demo data ready. Login: manager@pinfabb.it / Manager123! · marco.rossi@pinfabb.it / Tech123!",
   );
   return true;
+}
+
+/**
+ * One-time data fix for databases seeded before the PINFAB→PINFABB rename
+ * (company name has two Bs). Idempotent: matches only the old spelling.
+ */
+async function fixLegacyNaming(prisma: PrismaClient) {
+  const [users, templates, names] = await prisma.$transaction([
+    prisma.$executeRaw`
+      UPDATE "User" SET email = replace(email, '@pinfab.it', '@pinfabb.it')
+      WHERE email LIKE '%@pinfab.it'`,
+    prisma.$executeRaw`
+      UPDATE "ReportTemplate" SET name = replace(name, 'PINFAB ', 'PINFABB ')
+      WHERE name LIKE 'PINFAB %'`,
+    prisma.$executeRaw`
+      UPDATE "User" SET name = replace(name, 'PINFAB', 'PINFABB')
+      WHERE name LIKE '%PINFAB' OR name LIKE '%PINFAB %'`,
+  ]);
+  if (users > 0 || templates > 0 || names > 0) {
+    console.log(
+      `[bootstrap] renamed legacy PINFAB data (emails: ${users}, templates: ${templates}, names: ${names}) — login domain is now @pinfabb.it`,
+    );
+  }
 }
 
 export async function seedDemoData(prisma: PrismaClient) {
@@ -28,9 +54,9 @@ export async function seedDemoData(prisma: PrismaClient) {
   // ── Users ──
   await prisma.user.create({
     data: {
-      email: "admin@pinfab.it",
+      email: "admin@pinfabb.it",
       passwordHash: hash("Admin123!"),
-      name: "Amministratore PINFAB",
+      name: "Amministratore PINFABB",
       role: "ADMIN",
       locale: "it",
     },
@@ -38,7 +64,7 @@ export async function seedDemoData(prisma: PrismaClient) {
 
   const manager = await prisma.user.create({
     data: {
-      email: "manager@pinfab.it",
+      email: "manager@pinfabb.it",
       passwordHash: hash("Manager123!"),
       name: "Giacomo Quaresima",
       role: "MANAGER",
@@ -48,19 +74,19 @@ export async function seedDemoData(prisma: PrismaClient) {
 
   const technicianSpecs = [
     {
-      email: "marco.rossi@pinfab.it",
+      email: "marco.rossi@pinfabb.it",
       name: "Marco Rossi",
       homeBase: "Genova, Italy",
       phone: "+39 333 1234567",
     },
     {
-      email: "luca.bianchi@pinfab.it",
+      email: "luca.bianchi@pinfabb.it",
       name: "Luca Bianchi",
       homeBase: "La Spezia, Italy",
       phone: "+39 333 7654321",
     },
     {
-      email: "andrei.popescu@pinfab.it",
+      email: "andrei.popescu@pinfabb.it",
       name: "Andrei Popescu",
       homeBase: "Constanța, Romania",
       phone: "+40 722 123456",
@@ -520,10 +546,10 @@ export async function seedDemoData(prisma: PrismaClient) {
     },
   });
 
-  // ── Default report template (replaced with the real PINFAB template when provided) ──
+  // ── Default report template (replaced with the real PINFABB template when provided) ──
   await prisma.reportTemplate.create({
     data: {
-      name: "PINFAB Service Report (default)",
+      name: "PINFABB Service Report (default)",
       version: 1,
       isActive: true,
       structure: [

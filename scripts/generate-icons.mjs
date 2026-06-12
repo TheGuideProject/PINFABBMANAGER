@@ -1,5 +1,5 @@
 // One-off PWA icon generator: `node scripts/generate-icons.mjs`
-// Renders the PINFAB mark (fin silhouette on navy) to the PNG sizes
+// Renders the PINFABB mark (fin silhouette on navy) to the PNG sizes
 // referenced by src/app/manifest.ts. Output is committed.
 import sharp from "sharp";
 import { mkdir } from "node:fs/promises";
@@ -14,8 +14,8 @@ const icon = (padding) => `
     <path d="M96 332 C150 220 270 150 416 128 C330 190 240 250 150 330 Z"
           fill="#7dd3fc" opacity="0.55"/>
     <rect x="80" y="368" width="352" height="28" rx="14" fill="#1e3a5f"/>
-    <text x="256" y="468" font-family="Arial, Helvetica, sans-serif" font-size="64"
-          font-weight="bold" fill="#e2e8f0" text-anchor="middle" letter-spacing="14">PINFAB</text>
+    <text x="256" y="468" font-family="Arial, Helvetica, sans-serif" font-size="58"
+          font-weight="bold" fill="#e2e8f0" text-anchor="middle" letter-spacing="8">PINFABB</text>
   </g>
 </svg>`;
 

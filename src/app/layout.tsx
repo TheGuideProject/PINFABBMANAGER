@@ -18,15 +18,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "PINFAB Manager",
-    template: "%s · PINFAB Manager",
+    default: "PINFABB Manager",
+    template: "%s · PINFABB Manager",
   },
   description: "Fin stabilizer operations management platform",
-  applicationName: "PINFAB Manager",
+  applicationName: "PINFABB Manager",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "PINFAB Manager",
+    title: "PINFABB Manager",
   },
 };
 

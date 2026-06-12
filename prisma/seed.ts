@@ -11,7 +11,7 @@ const prisma = new PrismaClient({
 });
 
 async function main() {
-  console.log("Seeding PINFAB Manager demo data…");
+  console.log("Seeding PINFABB Manager demo data…");
 
   // Wipe in FK-safe order
   await prisma.$transaction([
@@ -44,11 +44,11 @@ async function main() {
   await seedDemoData(prisma);
 
   console.log("\nSeed complete. Demo accounts:");
-  console.log("  ADMIN       admin@pinfab.it      / Admin123!");
-  console.log("  MANAGER     manager@pinfab.it    / Manager123!");
-  console.log("  TECHNICIAN  marco.rossi@pinfab.it    / Tech123!");
-  console.log("  TECHNICIAN  luca.bianchi@pinfab.it   / Tech123!");
-  console.log("  TECHNICIAN  andrei.popescu@pinfab.it / Tech123!");
+  console.log("  ADMIN       admin@pinfabb.it      / Admin123!");
+  console.log("  MANAGER     manager@pinfabb.it    / Manager123!");
+  console.log("  TECHNICIAN  marco.rossi@pinfabb.it    / Tech123!");
+  console.log("  TECHNICIAN  luca.bianchi@pinfabb.it   / Tech123!");
+  console.log("  TECHNICIAN  andrei.popescu@pinfabb.it / Tech123!");
 }
 
 main()

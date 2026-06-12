@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "PINFAB Manager",
-    short_name: "PINFAB",
+    name: "PINFABB Manager",
+    short_name: "PINFABB",
     description: "Fin stabilizer operations management platform",
     start_url: "/",
     display: "standalone",
