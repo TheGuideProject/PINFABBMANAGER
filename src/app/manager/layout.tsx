@@ -2,6 +2,7 @@ import { Anchor } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { auth } from "@/server/auth";
 import { ManagerNav } from "@/components/layout/manager-nav";
+import { ManagerMobileNav } from "@/components/layout/manager-mobile-nav";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { NotificationBell } from "@/components/layout/notification-bell";
 import { UserMenu } from "@/components/layout/user-menu";
@@ -30,7 +31,8 @@ export default async function ManagerLayout({
 
       <div className="flex min-w-0 flex-1 flex-col">
         <header className="sticky top-0 z-20 flex h-14 items-center justify-between gap-3 border-b border-slate-200 bg-white/90 px-4 backdrop-blur lg:px-6">
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-1 lg:hidden">
+            <ManagerMobileNav />
             <Anchor className="size-5 text-sky-600" aria-hidden />
             <span className="text-sm font-semibold">{tc("appName")}</span>
           </div>
