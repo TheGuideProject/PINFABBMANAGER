@@ -7,6 +7,7 @@ import {
   CheckCircle2,
   Circle,
   ClipboardList,
+  FileText,
   MapPin,
   Mic,
   Ship,
@@ -113,6 +114,11 @@ export default async function TechJobDetail({
         <Button asChild size="lg" variant="outline" className="w-full">
           <Link href={`/tech/jobs/${project.id}/meeting`}>
             <Mic className="size-5" aria-hidden /> {tHome("meetingButton")}
+          </Link>
+        </Button>
+        <Button asChild size="lg" variant="outline" className="w-full">
+          <Link href={`/tech/jobs/${project.id}/report`}>
+            <FileText className="size-5" aria-hidden /> {tHome("reportButton")}
           </Link>
         </Button>
       </div>

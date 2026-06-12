@@ -68,7 +68,8 @@
     "directivesTitle": "Disposizioni",
     "directivesEmpty": "Nessuna disposizione dall'ufficio.",
     "profileTitle": "Profilo",
-    "meetingButton": "Riunione mattutina"
+    "meetingButton": "Riunione mattutina",
+    "reportButton": "Report finale"
   },
   "enums": {
     "ProjectStatus": {
@@ -187,6 +188,21 @@
       "LOGISTICS": "Logistica",
       "QUALITY": "Qualità",
       "OTHER": "Altro"
+    },
+    "ReportStatus": {
+      "DRAFT": "Bozza",
+      "GENERATED": "Generato",
+      "IN_REVIEW": "In revisione",
+      "FINALIZED": "Finalizzato",
+      "SIGNED": "Firmato",
+      "COUNTERSIGNED": "Controfirmato",
+      "ARCHIVED": "Archiviato"
+    },
+    "SignatureKind": {
+      "TECHNICIAN": "Tecnico",
+      "INSPECTOR": "Ispettore",
+      "CLIENT": "Cliente",
+      "MANAGER": "Manager"
     }
   },
   "forms": {
@@ -211,7 +227,8 @@
       "passwordRequired": "La password è obbligatoria per i nuovi account",
       "notFound": "Non trovato",
       "genericError": "Qualcosa è andato storto",
-      "alreadySubmitted": "Il log è già stato inviato"
+      "alreadySubmitted": "Il log è già stato inviato",
+      "reportLocked": "Il report è bloccato (già finalizzato/firmato)"
     }
   },
   "entities": {
@@ -419,5 +436,57 @@
     "error": "Errore",
     "type": "Tipo",
     "created": "Creato"
+  },
+  "reports": {
+    "title": "Report",
+    "report": "Report",
+    "create": "Genera report",
+    "creating": "In coda — l'AI sta redigendo il report…",
+    "empty": "Nessun report.",
+    "section": "Sezione",
+    "regenerate": "Rigenera",
+    "finalize": "Finalizza report",
+    "finalizeConfirm": "Finalizzare? Il contenuto sarà bloccato e verrà generato il PDF.",
+    "downloadPdf": "Scarica PDF",
+    "downloadFinal": "Scarica PDF finale",
+    "downloadScan": "Scarica scansione firmata",
+    "sign": "Firma",
+    "signCanvas": "Firma su schermo",
+    "uploadScan": "Carica scansione firmata",
+    "signerName": "Nome firmatario",
+    "signerTitle": "Titolo / ruolo",
+    "signatureKind": "Firma come",
+    "clearSignature": "Cancella",
+    "applySignature": "Applica firma",
+    "countersign": "Controfirma",
+    "signatures": "Firme",
+    "autoSection": "Compilata automaticamente dai dati di campo alla generazione del PDF.",
+    "generatedAt": "Redatto {date}",
+    "status": "Stato",
+    "project": "Progetto",
+    "version": "Versione",
+    "waitingGeneration": "La bozza AI è in preparazione. Aggiorna tra qualche secondo.",
+    "scanHint": "Fotografa ogni pagina firmata in ordine, poi carica.",
+    "pages": "Pagine"
+  },
+  "templates": {
+    "title": "Template report",
+    "addSection": "Aggiungi sezione",
+    "editSection": "Modifica sezione",
+    "key": "Chiave (unica, snake_case)",
+    "titleEn": "Titolo (EN)",
+    "titleIt": "Titolo (IT)",
+    "kind": "Tipo",
+    "aiHint": "Indicazione AI (cosa scrivere nella sezione)",
+    "moveUp": "Sposta su",
+    "moveDown": "Sposta giù",
+    "activeTemplate": "Template attivo",
+    "kinds": {
+      "text": "Testo (redatto da AI)",
+      "table": "Tabella (redatta da AI)",
+      "measurements": "Misurazioni (auto)",
+      "photos": "Foto (auto)",
+      "signatures": "Firme (auto)"
+    }
   }
 }

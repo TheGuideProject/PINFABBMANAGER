@@ -68,7 +68,8 @@
     "directivesTitle": "Directives",
     "directivesEmpty": "No directives from the office.",
     "profileTitle": "Profile",
-    "meetingButton": "Morning meeting"
+    "meetingButton": "Morning meeting",
+    "reportButton": "Final report"
   },
   "enums": {
     "ProjectStatus": {
@@ -187,6 +188,21 @@
       "LOGISTICS": "Logistics",
       "QUALITY": "Quality",
       "OTHER": "Other"
+    },
+    "ReportStatus": {
+      "DRAFT": "Draft",
+      "GENERATED": "Generated",
+      "IN_REVIEW": "In review",
+      "FINALIZED": "Finalized",
+      "SIGNED": "Signed",
+      "COUNTERSIGNED": "Countersigned",
+      "ARCHIVED": "Archived"
+    },
+    "SignatureKind": {
+      "TECHNICIAN": "Technician",
+      "INSPECTOR": "Inspector",
+      "CLIENT": "Client",
+      "MANAGER": "Manager"
     }
   },
   "forms": {
@@ -211,7 +227,8 @@
       "passwordRequired": "Password is required for new accounts",
       "notFound": "Not found",
       "genericError": "Something went wrong",
-      "alreadySubmitted": "The log was already submitted"
+      "alreadySubmitted": "The log was already submitted",
+      "reportLocked": "The report is locked (already finalized/signed)"
     }
   },
   "entities": {
@@ -419,5 +436,57 @@
     "error": "Error",
     "type": "Type",
     "created": "Created"
+  },
+  "reports": {
+    "title": "Reports",
+    "report": "Report",
+    "create": "Generate report",
+    "creating": "Queued — the AI is drafting the report…",
+    "empty": "No reports yet.",
+    "section": "Section",
+    "regenerate": "Regenerate",
+    "finalize": "Finalize report",
+    "finalizeConfirm": "Finalize? Content will be locked and the PDF generated.",
+    "downloadPdf": "Download PDF",
+    "downloadFinal": "Download final PDF",
+    "downloadScan": "Download signed scan",
+    "sign": "Sign",
+    "signCanvas": "Sign on screen",
+    "uploadScan": "Upload signed scan",
+    "signerName": "Signer name",
+    "signerTitle": "Title / role",
+    "signatureKind": "Signing as",
+    "clearSignature": "Clear",
+    "applySignature": "Apply signature",
+    "countersign": "Countersign",
+    "signatures": "Signatures",
+    "autoSection": "Auto-populated from field data when the PDF is generated.",
+    "generatedAt": "Drafted {date}",
+    "status": "Status",
+    "project": "Project",
+    "version": "Version",
+    "waitingGeneration": "The AI draft is being prepared. Refresh in a few seconds.",
+    "scanHint": "Photograph each signed page in order, then upload.",
+    "pages": "Pages"
+  },
+  "templates": {
+    "title": "Report templates",
+    "addSection": "Add section",
+    "editSection": "Edit section",
+    "key": "Key (unique, snake_case)",
+    "titleEn": "Title (EN)",
+    "titleIt": "Title (IT)",
+    "kind": "Kind",
+    "aiHint": "AI hint (what to write in this section)",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "activeTemplate": "Active template",
+    "kinds": {
+      "text": "Text (AI-drafted)",
+      "table": "Table (AI-drafted)",
+      "measurements": "Measurements (auto)",
+      "photos": "Photos (auto)",
+      "signatures": "Signatures (auto)"
+    }
   }
 }
